@@ -1,0 +1,13 @@
+.no-spinner {
+  /* For Chrome, Safari, Edge, Opera */
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* For Firefox */
+  &[type="number"] {
+    -moz-appearance: textfield;
+  }
+}

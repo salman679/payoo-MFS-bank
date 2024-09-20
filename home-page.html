@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main class="flex justify-center items-center">
+      <div class="mockup-phone">
+        <div class="camera"></div>
+        <div class="display">
+          <div class="artboard artboard-demo phone-1">
+            <div class="stats shadow">
+              <div class="stat">
+                <div id="Available-balance" class="stat-value">89400</div>
+                <div class="stat-desc">Available Balance</div>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+            <div>
+              <button id="btn-add-money" class="btn btn-lg">Add Money</button>
+              <button id="btn-cash-out" class="btn btn-lg">CashOut</button>
+            </div>
+            <div class="divider"></div>
+
+            <div id="add-money-form" class="mx-11 mb-5">
+              <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <form class="card-body">
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Amount</span>
+                    </label>
+                    <input
+                      type="number"
+                      placeholder="Amount"
+                      id="Amount-input"
+                      class="input input-bordered no-spinner"
+                      required
+                    />
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Pin</span>
+                    </label>
+                    <input
+                      type="password"
+                      id="Pin-input"
+                      placeholder="Enter your Pin"
+                      class="input input-bordered"
+                      required
+                    />
+                  </div>
+                  <div class="form-control">
+                    <button id="button-add-money" class="btn btn-primary">
+                      Add Money
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div id="cashOut-form" class="mx-11 mb-5 hidden">
+              <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <form class="card-body">
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Amount</span>
+                    </label>
+                    <input
+                      type="number"
+                      placeholder="Amount"
+                      id="cashOut-input"
+                      class="input input-bordered no-spinner"
+                      required
+                    />
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Pin</span>
+                    </label>
+                    <input
+                      type="password"
+                      id="cashOut-pin"
+                      placeholder="Enter your Pin"
+                      class="input input-bordered"
+                      required
+                    />
+                  </div>
+                  <div class="form-control">
+                    <button id="button-cashOut" class="btn btn-primary">
+                      Cash Out
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="/assets/js/home.js"></script>
+  </body>
+</html>
